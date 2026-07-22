@@ -25,3 +25,9 @@ This project was created to strengthen my understanding of:
 ## Inspiration
 
 Alien Invasion is inspired by classic arcade shooters such as **Space Invaders** and **Galaga**, recreating their core gameplay while serving as a practical introduction to game development with Python.
+
+## Changes 
+
+I will be following **Track 2** for our class requirements. 
+For the fleet formation, I will be using a zig zag shape. 
+For the updated assets, I will be drawing them pixel style via Procreate. 
