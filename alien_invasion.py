@@ -31,7 +31,7 @@ class AlienInvasion:
 
         self.screen = pygame.display.set_mode(
             (self.settings.screen_width, self.settings.screen_height))
-        pygame.display.set_caption("Alien Invasion")
+        pygame.display.set_caption("Coral Clash - Track 2")
 
         # Create an instance to store game statistics,
         #   and create a scoreboard.
