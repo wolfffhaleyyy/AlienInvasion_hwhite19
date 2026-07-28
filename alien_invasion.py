@@ -11,6 +11,14 @@ from ship import Ship
 from bullet import Bullet
 from alien import Alien
 
+"""
+Program Name: Coral Clash
+Author: Haley White
+Purpose: main game file - runs the game loop, handles events, and pulls everything else together
+Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
+              and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
+Date: July 2026
+"""
 
 class AlienInvasion:
     """Overall class to manage game assets and behavior."""

@@ -2,6 +2,14 @@ import pygame
 
 from pygame.sprite import Sprite
 
+"""
+Program Name: Coral Clash
+Author: Haley White
+Purpose: handles the jellyfish (alien) sprites - spawning them, moving them around, and checking screen edges
+Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
+              and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
+Date: July 2026
+"""
 
 class Alien(Sprite):
     """A class to represent a single alien in the fleet."""

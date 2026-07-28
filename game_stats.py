@@ -1,3 +1,12 @@
+"""
+Program Name: Coral Clash
+Author: Haley White
+Purpose: tracks game stats like score, level, and how many ships are left
+Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
+              and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
+Date: July 2026
+"""
+
 class GameStats:
     """Track statistics for Alien Invasion."""
 

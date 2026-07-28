@@ -1,6 +1,15 @@
 import pygame
 from pygame.sprite import Sprite
 
+"""
+Program Name: Coral Clash
+Author: Haley White
+Purpose: handles the laser fired from the submarine - creating it, moving it, and drawing it
+Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
+              and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
+Date: July 2026
+"""
+
 class Bullet(Sprite):
     """A class to manage bullets fired from the ship."""
 

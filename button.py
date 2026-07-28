@@ -1,5 +1,13 @@
 import pygame.font
 
+"""
+Program Name: Coral Clash
+Author: Haley White
+Purpose: handles the play button so the player can start the game
+Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
+              and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
+Date: July 2026
+"""
 
 class Button:
     """A class to build buttons for the game."""

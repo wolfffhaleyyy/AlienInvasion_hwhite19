@@ -3,6 +3,14 @@ from pygame.sprite import Group
 
 from ship import Ship
 
+"""
+Program Name: Coral Clash
+Author: Haley White
+Purpose: displays the score, high score, level, and remaining ships on screen
+Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
+              and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
+Date: July 2026
+"""
 
 class Scoreboard:
     """A class to report scoring information."""
