@@ -1,5 +1,9 @@
 # Alien Invasion
 
+# Milestone 1 preview
+
+- https://video.cscc.edu/edit/1_rehc516o
+
 ## Overview
 
 Alien Invasion is a Python game built with **Pygame** as a way to learn the fundamentals of game development. Inspired by classic arcade games like **Space Invaders** and **Galaga**, this project recreates the core gameplay while providing hands-on experience with object-oriented programming and game mechanics.
