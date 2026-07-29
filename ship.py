@@ -1,5 +1,6 @@
 import pygame
 from pygame.sprite import Sprite
+from pathlib import Path
 
 """
 Program Name: Coral Clash
@@ -21,7 +22,8 @@ class Ship(Sprite):
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load the ship image and get its rect.
-        self.image = pygame.image.load('images/ship.bmp')
+        image_path = Path(__file__).parent / "assets" / "images" / "ship.png"
+        self.image = pygame.image.load(image_path)
         self.rect = self.image.get_rect()
 
         # Start each new ship at the bottom center of the screen.

@@ -3,6 +3,7 @@ from time import sleep
 
 import pygame
 
+from pathlib import Path
 from settings import Settings
 from game_stats import GameStats
 from scoreboard import Scoreboard
@@ -32,6 +33,12 @@ class AlienInvasion:
         self.screen = pygame.display.set_mode(
             (self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Coral Clash - Track 2")
+        
+         # Load and scale the background image to fill the screen.
+        bg_path = Path(__file__).parent / "assets" / "images" / "background.png"
+        self.bg_image = pygame.image.load(bg_path)
+        self.bg_image = pygame.transform.scale(
+            self.bg_image, (self.settings.screen_width, self.settings.screen_height))
 
         # Create an instance to store game statistics,
         #   and create a scoreboard.
@@ -240,7 +247,7 @@ class AlienInvasion:
 
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
-        self.screen.fill(self.settings.bg_color)
+        self.screen.blit(self.bg_image, (0, 0))
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
         self.ship.blitme()
