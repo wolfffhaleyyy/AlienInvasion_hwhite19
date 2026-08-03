@@ -208,24 +208,35 @@ class AlienInvasion:
                 break
 
     def _create_fleet(self):
-        """Create the fleet of aliens."""
-        # Create an alien and keep adding aliens until there's no room left.
-        # Spacing between aliens is one alien width and one alien height.
+        """Create the fleet of octopus in a zig-zag seaweed pattern."""
         alien = Alien(self)
         alien_width, alien_height = alien.rect.size
 
-        current_x, current_y = alien_width, alien_height
-        while current_y < (self.settings.screen_height - 3 * alien_height):
-            while current_x < (self.settings.screen_width - 2 * alien_width):
-                self._create_alien(current_x, current_y)
-                current_x += 2 * alien_width
+        # figure out how many columns actually fit on screen
+        column_spacing = 2 * alien_width
+        num_columns = (self.settings.screen_width - 2 * alien_width) // column_spacing
 
-            # Finished a row; reset x value, and increment y value.
-            current_x = alien_width
-            current_y += 2 * alien_height
+        # 3 jellyfish per column, and this offset is what staggers
+        # every other column up/down to get that seaweed swaying look
+        aliens_per_column = 3
+        row_spacing = 2 * alien_height
+        zigzag_offset = alien_height  # how far the "low" columns get pushed down
+
+        for col in range(num_columns):
+            current_x = alien_width + col * column_spacing
+
+            # even columns start high, odd columns start low - this is the actual zigzag
+            if col % 2 == 0:
+                current_y = alien_height
+            else:
+                current_y = alien_height + zigzag_offset
+
+            for row in range(aliens_per_column):
+                self._create_alien(current_x, current_y)
+                current_y += row_spacing
 
     def _create_alien(self, x_position, y_position):
-        """Create an alien and place it in the fleet."""
+        """Create an octopus and place it in the fleet."""
         new_alien = Alien(self)
         new_alien.x = x_position
         new_alien.rect.x = x_position
