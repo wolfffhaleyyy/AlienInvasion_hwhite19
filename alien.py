@@ -24,6 +24,8 @@ class Alien(Sprite):
         # Load the alien image and set its rect attribute.
         image_path = Path(__file__).parent / "assets" / "images" / "octopus.png"
         self.image = pygame.image.load(image_path)
+        self.image = pygame.transform.scale(self.image, (35, 35))
+        self.image = pygame.transform.rotate(self.image, -90)
         self.rect = self.image.get_rect()
 
         # Start each new alien near the top left of the screen.
