@@ -2,6 +2,7 @@ import sys
 from time import sleep
 
 import pygame
+import random
 
 from pathlib import Path
 from settings import Settings
@@ -223,7 +224,7 @@ class AlienInvasion:
         zigzag_offset = alien_height  # how far the "low" columns get pushed down
 
         for col in range(num_columns):
-            current_x = alien_width + col * column_spacing
+            current_x = alien_width + col * column_spacing + random.randint(-15, 15)
 
             # even columns start high, odd columns start low - this is the actual zigzag
             if col % 2 == 0:
@@ -232,7 +233,8 @@ class AlienInvasion:
                 current_y = alien_height + zigzag_offset
 
             for row in range(aliens_per_column):
-                self._create_alien(current_x, current_y)
+                jittered_y = current_y + random.randint(-10, 10)
+                self._create_alien(current_x, jittered_y)
                 current_y += row_spacing
 
     def _create_alien(self, x_position, y_position):
