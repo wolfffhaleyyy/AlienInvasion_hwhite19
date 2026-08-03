@@ -217,9 +217,9 @@ class AlienInvasion:
         column_spacing = 2 * alien_width
         num_columns = (self.settings.screen_width - 2 * alien_width) // column_spacing
 
-        # 3 jellyfish per column, and this offset is what staggers
+        # 5 octopus per column, and this offset is what staggers
         # every other column up/down to get that seaweed swaying look
-        aliens_per_column = 3
+        aliens_per_column = 5
         row_spacing = 2 * alien_height
         zigzag_offset = alien_height  # how far the "low" columns get pushed down
 
