@@ -20,6 +20,9 @@ Purpose: main game file - runs the game loop, handles events, and pulls everythi
 Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
               and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
 Date: July 2026
+Asset attribution: background art - CraftPix free assets (https://craftpix.net/), see license at https://craftpix.net/file-licenses/
+Asset attribution: background music - "Water Game Theme Loop 2" by Mrthenoronha, Freesound (https://freesound.org/people/Mrthenoronha/sounds/514800/)
+Asset attribution: impact sound (pop.ogg) - "Bubbles Pop" pack, OpenGameArt (https://opengameart.org/content/bubbles-pop)
 """
 
 class AlienInvasion:

@@ -11,6 +11,8 @@ Purpose: displays the score, high score, level, and remaining ships on screen
 Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
               and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
 Date: July 2026
+Asset attribution: HUD panel boxes (hud_score_box.png, hud_center_box.png, hud_lives_box.png) - "Paper UI Pack for Games" by loudeyes (https://loudeyes.itch.io/paper-ui-pack-for-games)
+Asset attribution: Chewy font by Astigmatic, Google Fonts (https://fonts.google.com/specimen/Chewy)
 """
 
 class Scoreboard:

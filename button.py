@@ -9,6 +9,7 @@ Purpose: handles the play button so the player can start the game
 Starter Code: adapted from the starter repo (https://github.com/RedBeard41/alien_Invasion_starter.git)
               and Python Crash Course (https://learning.oreilly.com/library/view/python-crash-course/9781098156664/)
 Date: July 2026
+Asset attribution: play button image - "Paper UI Pack for Games" by loudeyes (https://loudeyes.itch.io/paper-ui-pack-for-games)
 """
 
 class Button:
