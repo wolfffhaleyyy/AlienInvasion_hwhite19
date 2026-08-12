@@ -1,4 +1,6 @@
 import pygame.font
+from pathlib import Path
+
 
 """
 Program Name: Coral Clash
@@ -21,7 +23,8 @@ class Button:
         self.width, self.height = 200, 50
         self.button_color = (0, 135, 0)
         self.text_color = (255, 255, 255)
-        self.font = pygame.font.SysFont(None, 48)
+        font_path = Path(__file__).parent / "assets" / "fonts" / "Chewy-Regular.ttf"
+        self.font = pygame.font.Font(font_path, 72)
 
         # Build the button's rect object and center it.
         self.rect = pygame.Rect(0, 0, self.width, self.height)

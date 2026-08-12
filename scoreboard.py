@@ -2,6 +2,7 @@ import pygame.font
 from pygame.sprite import Group
 
 from ship import Ship
+from pathlib import Path
 
 """
 Program Name: Coral Clash
@@ -25,7 +26,8 @@ class Scoreboard:
 
         # Font settings for scoring information.
         self.text_color = (30, 30, 30)
-        self.font = pygame.font.SysFont(None, 48)
+        font_path = Path(__file__).parent / "assets" / "fonts" / "Chewy-Regular.ttf"
+        self.font = pygame.font.Font(font_path, 36)
 
         # Prepare the initial score images.
         self.prep_score()
