@@ -25,7 +25,7 @@ class Button:
         self.rect = self.image.get_rect()
         self.rect.center = self.screen_rect.center
         
-        self.text_color = (255, 255, 255)
+        self.text_color = (255, 131, 222)
         font_path = Path(__file__).parent / "assets" / "fonts" / "Chewy-Regular.ttf"
         self.font = pygame.font.Font(font_path, 72)
 
