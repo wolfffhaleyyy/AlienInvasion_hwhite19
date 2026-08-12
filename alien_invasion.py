@@ -41,6 +41,17 @@ class AlienInvasion:
         self.bg_image = pygame.transform.scale(
             self.bg_image, (self.settings.screen_width, self.settings.screen_height))
 
+        # Set up mixer and load sound effects 
+        pygame.mixer.init()
+
+        music_path = Path(__file__).parent / "assets" / "sounds" / "514800__mrthenoronha__water-game-theme-loop-2.wav"
+        pygame.mixer.music.load(music_path)
+        pygame.mixer.music.set_volume(0.4)
+        pygame.mixer.music.play(loops=-1)
+
+        impact_path = Path(__file__).parent / "assets" / "sounds" / "pop.ogg"
+        self.impact_sound = pygame.mixer.Sound(impact_path)
+        
         # Create an instance to store game statistics,
         #   and create a scoreboard.
         self.stats = GameStats(self)
@@ -152,6 +163,7 @@ class AlienInvasion:
                 self.bullets, self.aliens, True, True)
 
         if collisions:
+            self.impact_sound.play()
             for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points * len(aliens)
             self.sb.prep_score()
